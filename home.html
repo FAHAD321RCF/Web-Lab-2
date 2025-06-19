@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Md.Rishad Chowdhury Fahad - Portfolio</title>
+    <link rel="stylesheet" href="home.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="./rccf.jpg" alt="Md.Rishad Chowdhury Fahad" class="logo-img" />
+                <span class="name">Md.Rishad Chowdhury Fahad</span>
+            </div>
+            <nav class="header-nav" id="mobileNav">
+                <ul class="nav-menu">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <button class="search-btn" aria-label="Search">🔍</button>
+                <button class="menu-btn" aria-label="Toggle menu">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Frontend Web Developer</h1>
+            <p class="hero-description">
+                Building innovative web experiences with modern technologies.
+            </p>
+        </div>
+    </section>
+
+    <!-- Quick Links -->
+    <section class="quick-links">
+        <div class="container">
+            <div class="links-grid">
+                <div class="link-card">
+                    <h3>About Me</h3>
+                    <p>Experienced web developer specializing in responsive design and modern frontend frameworks, with successful projects like "Portfolio Builder" and "E-commerce Dashboard."</p>
+                    <a href="#about" class="link-arrow">→</a>
+                </div>
+                <div class="link-card">
+                    <h3>My Projects</h3>
+                    <p>Explore my latest apps, designs, and web development projects.</p>
+                    <a href="#portfolio" class="link-arrow">→</a>
+                </div>
+                <div class="link-card">
+                    <h3>Skills</h3>
+                    <p>HTML, CSS, JavaScript, React, Node.js, Figma, Responsive Design, APIs, and more.</p>
+                    <a href="#skills" class="link-arrow">→</a>
+                </div>
+                <div class="link-card">
+                    <h3>Contact</h3>
+                    <p>Interested in working together? Let's connect and create something amazing!</p>
+                    <a href="#contact" class="link-arrow">→</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>01610332244<br>Email: fahad123@gmail.com</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Me</h4>
+                    <div class="social-links">
+                        <a href="#">GitHub</a>
+                        <a href="#">LinkedIn</a>
+                        <a href="#">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Fahad.All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toggle script -->
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        const nav = document.getElementById('mobileNav');
+        menuBtn.onclick = () => {
+            nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+        };
+    </script>
+</body>
+</html>
