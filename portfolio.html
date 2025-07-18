@@ -82,8 +82,65 @@
                         </div>
                     </a>
                 </div>
+                <!-- Daraz Clone Card -->
+        <div class="project-card compact" data-title="Daraz Clone" data-tags="html5 css3 ecommerce clone">
+            <a href="Daraz/darazindex.html" class="project-link-wrapper">
+              <div class="project-image">
+                <img src="images/Hero Main/hero-section.jpg" alt="Daraz Clone">
+              </div>
+              <div class="project-content">
+                <h3>Daraz Clone</h3>
+                <p>E-commerce homepage clone with product cards and modern UI</p>
+                <div class="project-tags">
+                  <span>HTML5</span>
+                  <span>CSS3</span>
+                </div>
+              </div>
+            </a>
+          </div>
+<!-- Alibaba Clone Card -->
+<div class="project-card compact" data-title="Alibaba Clone" data-tags="html5 css3 b2b clone">
+    <a href="Alibaba/alibaba.html" class="project-link-wrapper">
+      <div class="project-image">
+        <img src="./images/ali.png" alt="Alibaba Clone">
+      </div>
+      <div class="project-content">
+        <h3>Alibaba Clone</h3>
+        <p>B2B marketplace homepage clone with navigation, search, and modern UI.</p>
+        <div class="project-tags">
+          <span>HTML5</span>
+          <span>CSS3</span>
+        </div>
+      </div>
+    </a>
+  </div>
+
             </div>
         </div>
     </section>
+     <!-- ✅ Fixed Search Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const searchInput = document.getElementById('projectSearch');
+      const searchButton = document.getElementById('searchBtn');
+      const cards = document.querySelectorAll('.project-card');
+
+      function filterProjects() {
+        const input = searchInput.value.trim().toLowerCase();
+        cards.forEach(card => {
+          const title = card.getAttribute('data-title')?.toLowerCase() || '';
+          const tags = card.getAttribute('data-tags')?.toLowerCase() || '';
+          if (input === '' || title.includes(input) || tags.includes(input)) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      }
+
+      searchInput.addEventListener('input', filterProjects);
+      searchButton.addEventListener('click', filterProjects);
+    });
+  </script>
 </body>
 </html>
